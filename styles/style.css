@@ -7,10 +7,12 @@
 }
 
 nav {
+    position: fixed;
+    z-index: 999;
+    width: 100%;
     background-color: lightblue;
     height: 65px;
     line-height: 65px;
-    width: 100%;
 }
 
 nav .wrapper {
@@ -19,6 +21,7 @@ nav .wrapper {
     padding: 0 20px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     position: relative;
 }
 
@@ -112,19 +115,19 @@ nav .wrapper {
 
 .content .row .mega-links {
     border-left: 1px solid rgba(99, 99, 99, 0.498);
-    margin-left: -40px;
+    margin-left: -30px;
 }
 
-.content .row:nth-child(1),
-.content .row:nth-child(2) {
-    border-left: 0;
+.a {
+    border-left: 0 !important;
 }
 
 .mega-links li {
-    padding: 0 20px;
+    padding: 0 15px;
 }
 
 .mega-links li a {
-    padding: 0 20px;
+    padding: 0 15px;
     display: block;
 }
+
